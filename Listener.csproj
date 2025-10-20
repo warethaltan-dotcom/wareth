@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>Listener</RootNamespace>
+    <AssemblyName>Listener</AssemblyName>
+    <UserSecretsId>ed794f96-5099-4245-867b-f3a7fb94e25b</UserSecretsId>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="UI\MainForm.cs" />
+    <Compile Include="Core\PBXConnection.cs" />
+    <Compile Include="Core\CallManager.cs" />
+    <Compile Include="Core\UpdateManager.cs" />
+    <Compile Include="Config\ConfigManager.cs" />
+    <Compile Include="Logger\LogManager.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Resources\icon.ico" />
+    <None Include="Resources\setup.ico" />
+    <None Include="Config\config.json" />
+    <None Include="CaCallstatus.dat" />
+    <None Include="Installer\ListenerSetup.iss" />
+  </ItemGroup>
+
+  <ItemGroup>
+  <Compile Include="UI\MainForm.cs" />
+  <Compile Include="UI\MainForm.Designer.cs" />
+  <Compile Include="UI\MainForm.resx" />
+</ItemGroup>
+</Project>
