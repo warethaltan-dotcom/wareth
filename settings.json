@@ -1,0 +1,11 @@
+{
+  "pbx": {
+    "ip": "192.168.108.2",
+    "port": 5038,
+    "username": "CRM-integration",
+    "password": "ayad123@152968"
+  },
+  "agent": {
+    "extension": "1002"
+  }
+}
